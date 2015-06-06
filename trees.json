@@ -1,4 +1,41 @@
 {
-  "type": "FeatureCollection",
-  "features": []
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          -84.491936,
+          38.035386
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Burr Oak",
+        "height": "80 Feet to 100 Feet",
+        "spread": "80 Feet to 100 Feet",
+        "bloom": "Spring, No Significant Blooms",
+        "fruit": "Acorn with large cap",
+        "characteristics": "Recongized by it's bass fiddle shaped leaves and large fringe capped acorns, the bur oak can live for hundreds of years."
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -84.492024,
+          38.035552
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {
+        "name": "Possumhaw Viburnum",
+        "height": "12 Feet to 15 Feet",
+        "spread": "6 Feet to 12 Feet",
+        "bloom": "",
+        "fruit": "Blue-black drupes",
+        "characteristics": "Varies from red to purple. No real pest concerns and it is adaptable to sun or shade. Medicines made from the plant have been utilized for centuries."
+      }
+    }
+  ],
+  "type": "FeatureCollection"
 }
