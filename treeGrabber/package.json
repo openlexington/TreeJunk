@@ -1,0 +1,6 @@
+{
+  "name": "treeGrabber",
+  "description": "obtain geotags for trees around the city",
+  "version": "0.0.1",
+  "dependencies": {}
+}
