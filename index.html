@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TreeJunk</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.min.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+  <style>
+    #map { height: 800px; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script>
+
+    var map = L.map('map', {center: [38.035958, -84.490511], zoom: 18});
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
+
+    var style = {
+      "color": "#ff7800",
+      "weight": 5,
+      "opacity": 0.65
+    };
+
+    $.getJSON("trees.json", function(trees) {
+      L.geoJson(trees, {style: style}).addTo(map);
+    });
+
+  </script>
+</body>
+</html>
